@@ -1,0 +1,60 @@
+{
+  "productos": [
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "Disfraz Saw",
+      "body": "Es un disfraz negro de la película Saw",
+      "image": "disfraz-saw.png",
+      "precio": 15000 
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "Gengar",
+      "body": "Super almohada Gengar",
+      "image": "Gengar.jpeg",
+      "precio": 20000 
+    },
+    {
+      "userId": 3,
+      "id": 3,
+      "title": "Puños Hulk",
+      "body": "Puños Hulk GRRRRRRRRRRR",
+      "image": "hulk.png",
+      "precio": 30000 
+    },
+    {
+      "userId": 4,
+      "id": 4,
+      "title": "Figura Jinx",
+      "body": "tararararararararararar",
+      "image": "Jinx2ok.png",
+      "precio": 60000 
+    },
+    {
+      "userId": 5,
+      "id": 5,
+      "title": "Figura guts",
+      "body": "Que más decir",
+      "image": "guts.jpg",
+      "precio": 100000 
+    },
+    {
+      "userId": 6,
+      "id": 6,
+      "title": "Figura Vegeta",
+      "body": "Muere insecto!!!",
+      "image": "vegeta.png",
+      "precio": 90000 
+    },
+    {
+      "userId": 6,
+      "id": 7,  
+      "title": "Mochila Goku!!",
+      "body": "Ideal para el cole!!!",
+      "image": "goku.jpg",
+      "precio": 17500 
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../styles/estylos2.css">
+</head>
+<body>
+    <header >
+        <nav class="navbar" id="ir-navbar">
+            <img src="../icon/logo3.png" alt="logo" class="logo">
+            
+            <ul class="menu">
+                
+                <li><a href="../index.html" class="item-menu">Productos</a></li>
+                <li><a href="../pages/resenias.html" class="item-menu">Reseñas</a></li>
+                <li><a href="./carrito.html" class="item-menu">Carrito</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+        <section class="formulario" id="id-formulario">
+            <form action="https://formsubmit.co/chakal_damian@hotmail.com" method="post" class="form">
+                <h1>Contactanos Estaremos encantados de conocer tus propuestas!!!</h1>
+                <div class="label-name">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="first-name" id="name-input" placeholder="Nombre" value="" required>
+                </div>
+                <div class="label-apellido">
+                    <label for="name">Apellido:</label>
+                    <input type="text" name="Apellido" id="apellido-input" placeholder="Apellido" value="" required>
+                </div>                
+                <div class="label-email">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email"  id="email-input" placeholder="Email" value="" required>
+                </div>
+                <div>
+                    <textarea name="Mensaje" id="mensaje" cols="35" rows="10" placeholder="Escribenos y deja tu opinion!" class="txtarea"> 
+                    </textarea>
+                </div>
+                <div class="btn">
+                    <button class="btn-envio" type="submit">
+                        Submit
+                    </button>
+                    <button class="btn-reset" type="reset">
+                        Reset
+                    </button>
+                </div>
+            </form>
+        </section>
+        <footer class="footer">
+       
+            <ul class="menu-footer">
+                <li>
+                    <a href="../pages/" class="foot-items">Carrito</a>
+                </li>
+                
+                <li>
+                    <a href="../index.html" class="foot-items">Productos</a>
+                </li>
+                <li>
+                    <a href="../pages/resenias.html" class="foot-items">Reseñas</a>
+                </li>
+            </ul>
+            <ul class="social-icons">
+                <li class="icon-elem"><a href="http://www.youtube.com" target="_blank">
+                    <img  class="icon"  src="../icon/youtube-brands-solid.svg" alt="icon-youtube">
+                </a></li>
+                <li class="icon-elem"><a href="http://www.facebook.com" target="_blank">
+                    <img class="icon"  src="../icon/facebook-brands-solid.svg" alt="icono-facebook">
+                </a></li>
+                <li class="icon-elem"><a href="http://www.instagram.com" target="_blank">
+                    <img class="icon"  src="../icon/instagram-brands-solid (1).svg" alt="icono-instagram">
+                </a></li>
+                <li class="icon-elem" ><a href="http://www.x.com" target="_blank">
+                    <img class="icon"  src="../icon/square-x-twitter-brands-solid.svg" alt="icono-X"> 
+                </a></li>
+            </ul>
+           
+            <p class="der-reser">
+                & Todos los derechos reservados
+            </p>
+            <script src="./scrips/app.js"></script>
+        </footer>   
+</body>
+</html>

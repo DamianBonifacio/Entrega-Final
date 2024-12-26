@@ -1,0 +1,592 @@
+
+*{
+    color: antiquewhite;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*con esta propiedad lo que hacemos es 
+                            la caja calcula el contenido+padding+borde de la caja*/
+}
+body{ 
+    min-height: 100vh;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(../img/fondo.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;   
+}
+a{
+    text-decoration: none;
+    padding-left: 0;
+}
+ul{
+    text-decoration: none;
+    padding-left: 0;
+}
+.logo{
+    width:50px;
+    height: 50px;
+    padding-left: 1%;
+    padding-right: 1;
+}
+.menu{
+    width: 100vh;
+}
+nav .menu{
+    width: 100%;
+}
+header{   
+    justify-content: space-between;
+    background-color: rgba(137, 43, 226, 0);
+    width: 100%;  
+}
+.navbar {
+    display: flex;
+    justify-content: space-between ;
+    width: 100%;
+    height: 7dvh;
+
+}
+.navbar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;  
+}
+.navbar .menu{
+
+  text-align: right;  
+  width: 100%;
+
+}
+.navbar li{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    opacity: .5;
+    transition: 0.3s;  
+}
+.navbar li:hover{
+    opacity: 1;
+}
+.comic-con{
+    font-size: 1.3rem;
+    padding-left: 15px;
+    
+}
+/* Estilos para el carrito de compras */ 
+/* Estilos para los botones de aumentar y disminuir cantidad en el carrito */
+.carrito-container .quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito-container .quantity-controls button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carrito-container .quantity-controls button:hover {
+    background-color: #45a049; /* Verde oscuro */
+}
+
+.carrito-container .quantity-controls .decrease-quantity {
+    background-color: #f44336; /* Rojo */
+}
+
+.carrito-container .quantity-controls .decrease-quantity:hover {
+    background-color: #e53935; /* Rojo oscuro */
+}
+
+/* Otros estilos de la tabla del carrito */
+.carrito-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.carrito-container table th, .carrito-container table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.carrito-container table th {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carrito-container table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carrito-container table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.carrito-container table .remove-item {
+    background-color: #ff4c4c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carrito-container table .remove-item:hover {
+    background-color: #ff1c1c;
+}
+
+.carrito-container table .total-row {
+    font-weight: bold;
+}
+
+.carrito-container table .total-row td {
+    border-top: 2px solid #ddd;
+}
+
+.carrito-container p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Estilos para la página del carrito */
+.carrito-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.637);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: antiquewhite;
+}
+
+.carrito-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carrito-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.carrito-container table th,
+.carrito-container table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.carrito-container table th {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carrito-container table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carrito-container table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.carrito-container table .remove-item {
+    background-color: #ff4c4c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carrito-container table .remove-item:hover {
+    background-color: #ff1c1c;
+}
+
+.carrito-container table .total-row {
+    font-weight: bold;
+}
+
+.carrito-container table .total-row td {
+    border-top: 2px solid #ddd;
+}
+
+.carrito-container p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Estilos para el carrito de compras */
+.cart-container {
+    display: none; /* Ocultar inicialmente */
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.2); /* Similar a .card-content .btn-card */
+    backdrop-filter: blur(8px);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.637);
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+}
+.cart-container h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.cart-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.cart-container li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+.cart-container p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.main{
+    display: flex;
+    flex-direction: row; /* este es mi eje ahora
+                                sentido columna*/
+    flex-wrap: wrap;
+    justify-content:center;/*eje principal*/
+    align-content:center ;/*eje secundario*/
+    align-items: center;/*eje secundario*/
+    align-self:center;
+    gap: 1%; /*separacion entre  elementos*/   
+    height: 100%;
+    width:100%;
+    backdrop-filter: blur(8px);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.637) ;
+}
+.productos-Style{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px; /*vemos*/
+}
+.card{
+    width: 325px;  
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.637) ;   
+}
+.card img{
+    width: 100%;
+    height: 325px;
+    
+}
+.card-content{
+    padding: 16px;
+}
+.card-content h2{
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.card-content p{
+    color: antiquewhite;
+    font-size: 1rem;
+}
+.card-content .btn-card{
+    display: inline-block;
+    margin-left:4.8rem;   
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    color: antiquewhite;
+    text-transform: uppercase;
+    backdrop-filter: blur(8px);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.637);
+}
+.card-content :nth-child(3){
+    text-align: right;
+}
+.card-resenia h2{
+    margin: 30px 0;
+    text-transform: capitalize;
+}
+.resenias-container{
+    background-color: rgba(0, 0, 0, 0);
+    color: antiquewhite;
+    text-align: center;
+    padding: min(50px, 7%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.637) ;
+}
+.card-resenia{
+    padding: 2em;
+    background-color: rgba(46, 43, 43, 0.068);
+    border: 1px solid rgb(75, 82, 92);
+    border-radius: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 5px;
+    padding: 35px 35px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.637) ;
+}
+.formulario h1{
+    text-align: center;
+}
+#name-input, #email-input, #apellido-input, #mensaje, .btn-envio, .btn-reset{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    backdrop-filter: blur(8px);
+    margin: 5px 5px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.637) ;
+}
+.btn-envio, .btn-envio{
+    gap: 10px;  
+}
+.video-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    height: 325px;
+    margin-top: 50px;
+    justify-content: center;   
+}
+.video-contenedor h1{
+    margin-top: 1rem;
+}
+.video-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 325px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin: 10px 5px;
+
+}
+.menu-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+    list-style: none;
+
+}
+.foot-items{
+    color: antiquewhite;
+    text-transform: uppercase;
+    display:inline-block ;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: .5;
+    transition: 0.3s;
+}
+.foot-items:hover{
+    opacity: 1;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    color:white;
+    display: inline-block;
+    margin:0 10px;
+    transition: 0.5s;
+}
+.icon:hover{
+    transform: translateY(-10px) ;
+}
+.der-reser{
+   
+    color: antiquewhite;
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 5px;
+    font-size: x-large;
+
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.icon-elem{
+    list-style: none;
+}
+@media only screen and (max-width:786px) and (max-height: 1153px){
+        .navbar{
+            display: flex;
+            align-items: center;
+        }
+        .menu{
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            align-content: space-between;
+        }
+        .item-menu{
+            width: 100%;
+            text-align: center;
+            font-size: 1em;
+        }
+        .tecno-fest{
+            font-size: 0.9em;
+            padding-left: 15px;
+        }
+        .logo{
+            height: 25px;
+            width: 25px;
+            padding-left: 5px;
+        }
+}
+@media only screen and (max-width: 425px) and (max-height: 865px) {
+        .navbar{
+            display: flex;
+            align-items: center;
+        }
+        .menu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: space-between;
+        }
+        .item-menu{
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1em;
+            }
+        .tecno-fest{
+            font-size: .7em;
+            padding-left: 10px;
+        }
+        .logo{
+            width:30x;
+            height: 30px;
+            padding-left: 1%; 
+        }
+        .der-reser{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: medium;
+            align-content: center;         
+        }
+    }
+@media only screen and (max-width: 375px) and (max-height: 865px) {
+      .navbar{
+          display: flex;
+          align-items: center;
+      }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .item-menu{
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 0.8em;
+        }
+    .tecno-fest{
+        font-size: .7em;
+        padding-bottom: 4px;
+    }
+    h1{
+        font-size: 1.6rem;
+    }
+    .logo{
+        width:30x;
+        height: 30px;
+        padding-left: 1%; 
+    }
+    .foot-items{
+        font-size: 12px;
+    }
+  }  
+@media only screen and (max-width: 320px) and (max-height: 554px) {
+    .navbar{
+        display: flex;
+        align-items: center;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .item-menu{
+        width: 100%;
+        text-align: center;
+        /* padding: 10px 0; */
+       font-size: 0.6em;
+        }
+    .tecno-fest{
+        font-size: .7em;
+        padding-bottom: 3px;
+    }
+    h1{
+        font-size:1.5rem;
+    }
+    .logo{
+        width:30x;
+        height: 30px;
+        padding-left: 1%; 
+    }
+    section .formulario{
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 0;
+        width: 310;
+        height: 337;
+    }
+    #name-input, #email-input, #mensaje, .btn-envio, .btn-reset{
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 5px;
+        backdrop-filter: blur(8px);  
+    }
+}
+
