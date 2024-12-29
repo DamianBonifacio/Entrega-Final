@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function obtenerProductosEnTienda() {
         try {
-            const response = await fetch('../scrips/productos.json');
+            const response = await fetch('./scrips/productos.json');
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             const posts = await response.json();
             const sectionProducto = document.querySelector('#producto-card');
