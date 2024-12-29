@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function obtenerProductosEnTienda() {
         try {
-            const response = await fetch('/scrips/productos.json');
+            const response = await fetch('../scrips/productos.json');
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             const posts = await response.json();
             const sectionProducto = document.querySelector('#producto-card');
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             posts.productos.forEach(post => {
                 const html = `
                 <article class="card">
-                    <img src="./img/${post.image}" alt="${post.title}" width="299">
+                    <img src="../img/${post.image}" alt="${post.title}" width="299">
                     <div class="card-content">
                         <h2>${post.title}</h2>
                         <p>${post.body}</p>
